@@ -33,7 +33,7 @@ Parameters:
   GitHubToken:
     Type: String
     NoEcho: true
-    Description: 1885273090ead7425bdc3d3f98cd5722cf377685
+    Description: 9f433a58a4a2d3cf6e34b5ccdcd32443ebd36789
     MinLength: 3
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub personal access token
@@ -56,7 +56,7 @@ Parameters:
 
   KubectlRoleName:
     Type: String
-    Default: TESTdeploy
+    Default: UdacityFlaskDeployCBKubectlRole
     Description: IAM role used by kubectl to interact with EKS cluster
     MinLength: 3
     MaxLength: 100
