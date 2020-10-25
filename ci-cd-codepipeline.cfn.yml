@@ -33,7 +33,7 @@ Parameters:
   GitHubToken:
     Type: String
     NoEcho: true
-    Description: 3ec96f64dafe2d97d507b77ac142357b98d806b4
+    Description: 1885273090ead7425bdc3d3f98cd5722cf377685
     MinLength: 3
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub personal access token
@@ -155,7 +155,7 @@ Resources:
               response['Data'] = {"Message": "Resource creation failed"}
 
             response_body = json.dumps(response)
-            headers = {'content-type': '', "content-length": len(response_body) }
+            headers = {'content-type': '', "content-length": str(len(response_body)) }
             put_response = requests.put(event['ResponseURL'], headers=headers, data=response_body)
             return response
 
