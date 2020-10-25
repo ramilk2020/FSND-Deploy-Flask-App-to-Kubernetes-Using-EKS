@@ -27,6 +27,8 @@ def test_health(client):
     assert response.status_code == 200
     assert response.json == 'Healthy'
 
+    # Test fail condition for project review
+    assert response.status_code == 404
 
 def test_auth(client):
     body = {'email': EMAIL,
